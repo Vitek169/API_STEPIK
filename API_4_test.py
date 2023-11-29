@@ -1,7 +1,6 @@
 import requests
 base_url = 'https://rahulshettyacademy.com' #Базовая url
 key = '?key=qaclick123' #Параметры для всех звапросов
-post_resource = '/maps/api/place/add/json' #Ресурс метода Post
 
 '''Создание метода post'''
 post_resource = '/maps/api/place/add/json' #Ресурс метода Post
@@ -13,6 +12,11 @@ class TestNewLoc():
 
     def test_create_new_loc(self):
         '''Создание новых локаций'''
+        base_url = 'https://rahulshettyacademy.com'  # Базовая url
+        key = '?key=qaclick123'  # Параметры для всех звапросов
+        # '''Создание метода post'''
+        post_resource = '/maps/api/place/add/json'  # Ресурс метода Post
+        post_resource = '/maps/api/place/add/json'  # Ресурс метода Post
         for i in range(5): # Создаем цикл
             base_url = 'https://rahulshettyacademy.com' #Базовая url
             key = '?key=qaclick123' #Параметры для всех звапросов
@@ -61,10 +65,6 @@ class TestNewLoc():
             f.write(f"{place_id} {'\n'}") #Записываем в файл place_id, и перенос на следующую строку
             f.close() #Закрываем файл
 
-
-    def test_get_new_loc(self):
-        """Метод для отправки запроса GET и получение запроса о создании новой локации"""
-
         get_recource = '/maps/api/place/update/json'
         f = open('placeID.txt', 'r')
         for i in f:
@@ -80,18 +80,9 @@ class TestNewLoc():
 
 
 
+
+
 new_place = TestNewLoc()
 new_place.test_create_new_loc()
-new_place.test_get_new_loc()
-
-
-
-
-
-
-
-
-
-
 
 
