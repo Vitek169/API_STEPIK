@@ -1,6 +1,7 @@
 import requests
 base_url = 'https://rahulshettyacademy.com' #Базовая url
 key = '?key=qaclick123' #Параметры для всех звапросов
+post_resource = '/maps/api/place/add/json' #Ресурс метода Post
 
 '''Создание метода post'''
 post_resource = '/maps/api/place/add/json' #Ресурс метода Post
@@ -12,11 +13,6 @@ class TestNewLoc():
 
     def test_create_new_loc(self):
         '''Создание новых локаций'''
-        base_url = 'https://rahulshettyacademy.com'  # Базовая url
-        key = '?key=qaclick123'  # Параметры для всех звапросов
-        # '''Создание метода post'''
-        post_resource = '/maps/api/place/add/json'  # Ресурс метода Post
-        post_resource = '/maps/api/place/add/json'  # Ресурс метода Post
         for i in range(5): # Создаем цикл
             base_url = 'https://rahulshettyacademy.com' #Базовая url
             key = '?key=qaclick123' #Параметры для всех звапросов
@@ -65,10 +61,14 @@ class TestNewLoc():
             f.write(f"{place_id} {'\n'}") #Записываем в файл place_id, и перенос на следующую строку
             f.close() #Закрываем файл
 
-        get_recource = '/maps/api/place/update/json'
+
+    def test_get_new_loc(self):
+        """Метод для отправки запроса GET и получение запроса о создании новой локации"""
+
+        get_resource = '/maps/api/place/update/json'
         f = open('placeID.txt', 'r')
         for i in f:
-            get_url = base_url + get_recource + key + '&place_id=' + i
+            get_url = base_url + get_resource + key + '&place_id=' + i
             print(get_url)
             result_get = requests.get(get_url)
             print(result_get.text)
@@ -77,12 +77,54 @@ class TestNewLoc():
             print('Проверка создания новой локации прошла успешно!')
         f.close()
 
+    def test_delete_new(self):
+        """Метод для удаления длкации"""
+        delete_resource = '/maps/api/place/delete/json'
+        delete_url = base_url + delete_resource + key
+        with open('placeID.txt') as f:
+            l = f.read().splitlines()
+        print(l)
+        new_l = [l[1], l[3]] #Созжаю список из 2ух элементов
+        print(new_l)
+        for i in new_l: #Прохожу циклом по этим двум элементам и добавляю их в place_id
+             json_for_delete_new_location = {
+                "place_id": i
+
+            }
+
+        result_delete = requests.delete(delete_url, json=json_for_delete_new_location)
+        print(result_delete.text)
+        print(result_delete.status_code)
+        result_delete_status = result_delete.json()
+        info_result_delete_status = result_delete_status.get('status')
+        print(f'Статус: {info_result_delete_status}')
+        assert info_result_delete_status == 'OK'
+        print('Удалена новая локация!')
+
+        '''Проверяем удалилась ли локация'''
+        get_resource = '/maps/api/place/get/json'
+        get_url = base_url + get_resource + key + '&place_id=' + i
+        result_get = requests.get(get_url)
+        print(result_get.text)
+        print(f"Статус код: {result_get.status_code}")
+        assert 404 == result_get.status_code
+        print('Проверка удаления локации прошла успешно!')
+        check_delete = result_get.json()
+        check_delete_info = check_delete.get('msg')
+        assert check_delete_info == "Get operation failed, looks like place_id  doesn't exists"
+        print('Локация не обнаружена!')
+        l.pop(1)# Удаляем элементы из списка
+        l.pop(2)
+        """Созжаем новыйй список с оставшимися локациями"""
+        with open('placeID_new.txt.', 'w') as filehandle:
+            for listitem in l:
+                filehandle.write('%s\n' % listitem)
 
 
-
+        print('Тестирование Test_new_locathion - завершено!')
 
 
 new_place = TestNewLoc()
 new_place.test_create_new_loc()
-
-
+new_place.test_get_new_loc()
+new_place.test_delete_new()
