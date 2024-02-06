@@ -1,7 +1,6 @@
 import requests
 
 
-
 """Создаем класс"""
 class PersonWithVedor:
     def __init__(self):
