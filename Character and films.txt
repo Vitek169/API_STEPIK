@@ -1,0 +1,92 @@
+Название фильма: A New Hope.
+Имя персонажа: Luke Skywalker
+Имя персонажа: C-3PO
+Имя персонажа: R2-D2
+Имя персонажа: Darth Vader
+Имя персонажа: Leia Organa
+Имя персонажа: Owen Lars
+Имя персонажа: Beru Whitesun lars
+Имя персонажа: R5-D4
+Имя персонажа: Biggs Darklighter
+Имя персонажа: Obi-Wan Kenobi
+Имя персонажа: Wilhuff Tarkin
+Имя персонажа: Chewbacca
+Имя персонажа: Han Solo
+Имя персонажа: Greedo
+Имя персонажа: Jabba Desilijic Tiure
+Имя персонажа: Wedge Antilles
+Имя персонажа: Jek Tono Porkins
+Имя персонажа: Raymus Antilles
+Название фильма: The Empire Strikes Back.
+Имя персонажа: Luke Skywalker
+Имя персонажа: C-3PO
+Имя персонажа: R2-D2
+Имя персонажа: Darth Vader
+Имя персонажа: Leia Organa
+Имя персонажа: Obi-Wan Kenobi
+Имя персонажа: Chewbacca
+Имя персонажа: Han Solo
+Имя персонажа: Wedge Antilles
+Имя персонажа: Yoda
+Имя персонажа: Palpatine
+Имя персонажа: Boba Fett
+Имя персонажа: IG-88
+Имя персонажа: Bossk
+Имя персонажа: Lando Calrissian
+Имя персонажа: Lobot
+Название фильма: Return of the Jedi.
+Имя персонажа: Luke Skywalker
+Имя персонажа: C-3PO
+Имя персонажа: R2-D2
+Имя персонажа: Darth Vader
+Имя персонажа: Leia Organa
+Имя персонажа: Obi-Wan Kenobi
+Имя персонажа: Chewbacca
+Имя персонажа: Han Solo
+Имя персонажа: Jabba Desilijic Tiure
+Имя персонажа: Wedge Antilles
+Имя персонажа: Yoda
+Имя персонажа: Palpatine
+Имя персонажа: Boba Fett
+Имя персонажа: Lando Calrissian
+Имя персонажа: Ackbar
+Имя персонажа: Mon Mothma
+Имя персонажа: Arvel Crynyd
+Имя персонажа: Wicket Systri Warrick
+Имя персонажа: Nien Nunb
+Имя персонажа: Bib Fortuna
+Название фильма: Revenge of the Sith.
+Имя персонажа: Luke Skywalker
+Имя персонажа: C-3PO
+Имя персонажа: R2-D2
+Имя персонажа: Darth Vader
+Имя персонажа: Leia Organa
+Имя персонажа: Owen Lars
+Имя персонажа: Beru Whitesun lars
+Имя персонажа: Obi-Wan Kenobi
+Имя персонажа: Anakin Skywalker
+Имя персонажа: Wilhuff Tarkin
+Имя персонажа: Chewbacca
+Имя персонажа: Yoda
+Имя персонажа: Palpatine
+Имя персонажа: Nute Gunray
+Имя персонажа: Padmé Amidala
+Имя персонажа: Ayla Secura
+Имя персонажа: Mace Windu
+Имя персонажа: Ki-Adi-Mundi
+Имя персонажа: Kit Fisto
+Имя персонажа: Eeth Koth
+Имя персонажа: Adi Gallia
+Имя персонажа: Saesee Tiin
+Имя персонажа: Plo Koon
+Имя персонажа: Poggle the Lesser
+Имя персонажа: Luminara Unduli
+Имя персонажа: Dooku
+Имя персонажа: Bail Prestor Organa
+Имя персонажа: R4-P17
+Имя персонажа: Shaak Ti
+Имя персонажа: Grievous
+Имя персонажа: Tarfful
+Имя персонажа: Raymus Antilles
+Имя персонажа: Sly Moore
+Имя персонажа: Tion Medon
